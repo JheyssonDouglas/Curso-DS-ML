@@ -1,0 +1,36 @@
+{
+  "name": "reveal-run-in-terminal",
+  "version": "1.0.4",
+  "description": "Show and execute code in your presentation",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "np": "^6.5.0",
+    "reveal.js": "^3.9.2"
+  },
+  "scripts": {
+    "start": "node demo/app.js",
+    "build": "browserify --debug src/reveal-run-in-terminal.js > static/plugin/reveal-run-in-terminal.js",
+    "release": "np"
+  },
+  "author": {
+    "name": "Daniel Luxemburg",
+    "email": "daniel.luxemburg@gmail.com",
+    "url": "http://dluxemburg.com"
+  },
+  "contributors": [
+    {
+      "name": "Stanley Nguyen",
+      "email": "hung.ngn.the@gmail.com",
+      "url": "https://stanleynguyen/me"
+    }
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stanleynguyen/reveal-run-in-terminal.git"
+  }
+}
